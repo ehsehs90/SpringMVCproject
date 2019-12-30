@@ -1,9 +1,9 @@
 # SpringMVCproject
-Spring Quick Start BoradЛ▀╓Л┼╣
+Spring Quick Start Borad╫г╫ю
 ## BoardWeb
 
-- STSЙ╦╟К╟≤ М■└К║°Л═²М┼╦ Й╣╛Л└╠
-- git Л≈╟Й╡╟
+- STS╠Б╧щ га╥на╖ф╝ ╠╦╪╨
+- git ©╛╟А
 
 
 
