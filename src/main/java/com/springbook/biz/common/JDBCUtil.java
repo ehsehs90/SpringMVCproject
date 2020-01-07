@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class JDBCUtill {
+public class JDBCUtil {
 	public static Connection getConnection() {
 		try {
 			Class.forName("org.h2.Driver");
