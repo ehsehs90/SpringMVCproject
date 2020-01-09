@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
-import com.springobook.biz.board.BoardService;
-import com.springobook.biz.board.BoardVO;
+import com.springbook.biz.board.BoardService;
+import com.springbook.biz.board.BoardVO;
 
 public class BoardServiceClient {
 

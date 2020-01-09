@@ -1,4 +1,4 @@
-package com.springobook.biz.board;
+package com.springbook.biz.board;
 
 import java.util.List;
 
