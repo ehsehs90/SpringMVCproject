@@ -85,7 +85,7 @@ public class BoardDAO  {
 	}
 	//글 상세 조회	
 		
-		public void getBoard(BoardVO vo) {
+		public BoardVO getBoard(BoardVO vo) {
 			System.out.println("====> JDBC 로 getBoard() 기능 처리");
 			BoardVO board = null;
 			
@@ -93,7 +93,7 @@ public class BoardDAO  {
 				conn = JDBCUtil.getConnection();
 				stmt = conn.prepareStatement(BOARD_GET);
 				stmt.setInt(1, vo.getSeq());
-				stmt.executeUpdate();
+				rs= stmt.executeQuery();
 				if(rs.next()) {
 					board = new BoardVO();
 					board.setSeq(rs.getInt("SEQ"));
@@ -108,8 +108,9 @@ public class BoardDAO  {
 				e.printStackTrace();
 				
 			}finally {
-				JDBCUtil.close(stmt, conn);
+				JDBCUtil.close(rs, stmt, conn);
 			}
+			return board;
 		}
 	// 글 목록 조회
 		
