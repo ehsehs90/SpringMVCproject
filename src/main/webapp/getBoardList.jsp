@@ -19,7 +19,7 @@
 <body>
 <center>
 <h1>글 목록</h1>
-<h3>테스트님 환영합니다..<a href="logout_proc.jsp">Log-out</a></h3>
+<h3>테스트님 환영합니다..<a href="logout.do">Log-out</a></h3>
 
 <!-- 검색시작 -->
 <from action="getBoardList.jsp" method="post">
@@ -52,7 +52,7 @@
 <% for(BoardVO board: boardList){ %>
 <tr>
 	<td><%= board.getSeq() %></td>
-	<td align="left"><a href="getBoard.jsp?seq=<%= board.getSeq() %>"><%= board.getTitle() %></a></td>
+	<td align="left"><a href="getBoard.do?seq=<%= board.getSeq() %>"><%= board.getTitle() %></a></td>
 	<td><%= board.getWriter() %></td>
 	<td><%= board.getRegDate() %></td>
 	<td><%= board.getCnt() %></td>
