@@ -33,8 +33,10 @@ public class LoginController implements Controller{
 //		System.out.println("여기 왜 안들어와?");
 		ModelAndView mav = new ModelAndView();
 		if(user != null) {
+			System.out.println("들어와..");
 			mav.setViewName("getBoardList.do");
 		}else {
+			System.out.println("들어와...쫌");
 			mav.setViewName("login.jsp");
 		}
 		return mav;
